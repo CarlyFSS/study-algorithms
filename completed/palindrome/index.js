@@ -14,11 +14,17 @@ function palindrome(str) {
     reversedString = char + reversedString;
   }
 
+  // alternative
+  // reversedString = str.split('').reverse().join();
+
   if (reversedString === str) {
     return true;
   }
 
   return false;
+
+  // alternative
+  // return str === reversedString
 }
 
 module.exports = palindrome;
